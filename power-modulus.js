@@ -26,16 +26,6 @@
 //   return halfAns * a;
 // }
 
-// function towerOfHanoi(N, src, dest, int) {
-//   if (N === 1) return 1;
-
-//   let x = towerOfHanoi(N - 1, src, int, dest);
-//   let y = towerOfHanoi(1, src, dest, int);
-//   let z = towerOfHanoi(N - 1, int, dest, src);
-
-//   return x + y + z;
-// }
-
 function powHelp(A, B, C) {
     console.log({ A, B, C });
     if (A === 0n || A === 1n) return A % C;
@@ -61,7 +51,6 @@ function gfgPow(A, B, C) {
 }
 
 console.clear();
-// console.log(towerOfHanoi(15, "A", "B", "C"));
 // console.log(gfgPow(2132, 0, 12));
 console.log(gfgPow(0, 0, 1));
 // console.log(gfgPow(2, 3, 3));
